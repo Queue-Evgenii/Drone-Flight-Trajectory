@@ -1,0 +1,93 @@
+/* --------- general ----------- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --------- scene ----------- */
+.scene {
+  overflow: hidden;
+  margin: 0 auto;
+  height: 720px;
+  width: 1200px;
+  position: relative;
+  padding: 20px;
+  background-color: #0c0c0c;
+}
+.scene__background {
+  background: url("img/bg.jpg") no-repeat center / cover;
+  height: 100%;
+}
+
+/* --------- actor ----------- */
+.scene__actor {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.scene__actor img {
+  width: 100%;
+}
+
+/* --------- indicators ----------- */
+.scene__indicators {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.scene__indicators span {
+  position: absolute;
+  padding: 40px;
+}
+.indicators__top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicators__bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicators__left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.indicators__right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* ----------- actions -------------- */
+
+.actions__state-button {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.actions__state-button._start {
+  background-color: #EAD854;
+  color: #0c0c0c;
+}
+.actions__state-button._stop {
+  background-color: #0c0c0c;
+  color: #fff;
+}

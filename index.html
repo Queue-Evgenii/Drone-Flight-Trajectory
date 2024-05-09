@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="scene__indicators indicators">
+      <span class="indicators__top">N 360°</span>
+      <span class="indicators__bottom">S 180°</span>
+      <span class="indicators__left">W 270°</span>
+      <span class="indicators__right">E 90°</span>
+    </div>
+    <div class="scene__background"></div>
+    <div class="scene__actor actor">
+      <img src="img/actor.png" alt="">
+    </div>
+    <div class="scene__actions actions">
+      <button type="button" class="actions__state-button _start">Почати</button>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
